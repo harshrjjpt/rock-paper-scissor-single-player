@@ -1,0 +1,55 @@
+import random
+
+
+print("***rock***")
+print("***paper***")
+print("***scissors***")
+
+print("make your choice:")
+p1=input().lower()
+print(". \n" *5)
+
+pc_num = random.randint(0,2)
+if pc_num == 0:
+    pc = "rock"
+elif pc_num == 1:
+    pc = "paper"
+else:
+    pc = "scissors"
+print(f"computer plays {pc}")
+
+if p1 == "rock" and pc == "scissors":
+    print("you won!!")
+elif p1 == "scissors" and pc == "rock":
+    print("you lose!")
+elif p1 == "paper" and pc == "rock":
+    print("you won !!!")
+elif p1 == "rock" and pc == "paper":
+    print("you lose !!!")
+elif p1 == "paper" and pc == "scissors":
+    print("you lose !!!")
+elif  p1 == "scissors" and pc == "paper":
+    print("you won!!!")         
+elif p1 == pc:
+    print("its a tie, hahaha")
+else:
+    print("please enter 'rock,paper or scissors correctly")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
